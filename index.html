@@ -28,21 +28,21 @@
   }
 </style>
 <script>
-  const 2022PhotoContainer = document.getElementById("2022photos");
-  const 2023PhotoContainer = document.getElementById("2023photos");
+  const photoContainer2022 = document.getElementById("2022photos");
+  const photoContainer2023 = document.getElementById("2023photos");
 
   for (var i = 0; i < 9; i++) {
     const img = document.createElement("img");
     img.setAttribute('src', `resizedPMC2022Fall/2022fall${i}.jpg`);
     setTimeout(function() {
-      2022PhotoContainer.append(img);
+      photoContainer2022.append(img);
     }, 1000);
   }
   for (var i = 0; i < 10; i++) {
     const img = document.createElement("img");
     img.setAttribute('src', `resizedPMC2023Spring/2023spring${i}.jpg`);
     setTimeout(function() {
-      2023PhotoContainer.append(img);
+      photoContainer2023.append(img);
     }, 1000);
   }
 </script>
