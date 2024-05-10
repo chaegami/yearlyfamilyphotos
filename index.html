@@ -38,7 +38,14 @@
       photoContainer2022.append(img);
     }, 1000);
   }
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < 3; i++) {
+    const img = document.createElement("img");
+    img.setAttribute('src', `resizedPMC2023Spring/2023spring${i}.jpg`);
+    setTimeout(function() {
+      photoContainer2023.append(img);
+    }, 1000);
+  }
+  for (var i = 3; i < 10; i++) {
     const img = document.createElement("img");
     img.setAttribute('src', `resizedPMC2023Spring/2023spring${i}.jpg`);
     setTimeout(function() {
