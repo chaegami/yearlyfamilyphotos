@@ -2,28 +2,47 @@
 <body>
   <h1>Cha & Egami</h1>
   <div class="navbar">
+    <a href="/yearlyfamilyphotos" class="menu" id="yearlyfamilyphotos">2022~Current</a>
+    <a href="/2023Korea" class="menu" id="2023Korea">2023 Korea</a>
+    <a href="/2021" class="menu" id="2021">2021</a>
+    <a href="/2019" class="menu" id="2019">2019</a>
+    <a href="/2018Fall" class="menu" id="2018Fall">2018 Fall</a>
+    <a href="/2018Spring" class="menu" id="2018Spring">2018 Spring</a>
+    <a href="/schoolPics" class="menu" id="schoolPics">School Pictures</a>
     <a href="/" class="menu" id="firstbirthday">First Birthday</a>
     <a href="/wedding" class="menu" id="wedding">Wedding</a>
     <a href="/maternity" class="menu" id="maternity">Maternity</a>
     <a href="/infancy" class="menu" id="family">Infancy</a>
   </div>
-  <div id="photos">
+  <h2>2023</h2>
+  <div id="2023photos">
+  </div>
+  <h2>2022</h2>
+  <div id="2022photos">
   </div>
 </body>
 
 <style>
-  #firstbirthday {
+  #yearlyfamilyphotos {
     color: black;
   }
 </style>
 <script>
-  const photoContainer = document.getElementById("photos");
+  const 2022PhotoContainer = document.getElementById("2022photos");
+  const 2023PhotoContainer = document.getElementById("2023photos");
 
-  for (var i = 0; i < 105; i++) {
+  for (var i = 0; i < 9; i++) {
     const img = document.createElement("img");
-    img.setAttribute('src', `resizedfirstbirthdayphotos/firstbirthday${i}.jpg`);
+    img.setAttribute('src', `resizedPMC2022Fall/2022fall{i}.jpg`);
     setTimeout(function() {
-      photoContainer.append(img);
+      2022PhotoContainer.append(img);
+    }, 1000);
+  }
+  for (var i = 0; i < 10; i++) {
+    const img = document.createElement("img");
+    img.setAttribute('src', `resizedPMC2023Spring/2023spring{i}.jpg`);
+    setTimeout(function() {
+      2023PhotoContainer.append(img);
     }, 1000);
   }
 </script>
