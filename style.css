@@ -13,7 +13,7 @@ h1, h2, .navbar {
   text-decoration: none;
 }
 
-#photos {
+.photos {
   width: 800px;
   margin: 50px auto;
 }
