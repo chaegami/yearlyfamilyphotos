@@ -1,0 +1,29 @@
+<head> <link rel="stylesheet" type="text/css" href="style.css"> </head>
+<body>
+  <h1>Cha & Egami</h1>
+  <div class="navbar">
+    <a href="/" class="menu" id="firstbirthday">First Birthday</a>
+    <a href="/wedding" class="menu" id="wedding">Wedding</a>
+    <a href="/maternity" class="menu" id="maternity">Maternity</a>
+    <a href="/infancy" class="menu" id="family">Infancy</a>
+  </div>
+  <div id="photos">
+  </div>
+</body>
+
+<style>
+  #firstbirthday {
+    color: black;
+  }
+</style>
+<script>
+  const photoContainer = document.getElementById("photos");
+
+  for (var i = 0; i < 105; i++) {
+    const img = document.createElement("img");
+    img.setAttribute('src', `resizedfirstbirthdayphotos/firstbirthday${i}.jpg`);
+    setTimeout(function() {
+      photoContainer.append(img);
+    }, 1000);
+  }
+</script>

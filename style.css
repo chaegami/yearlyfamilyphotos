@@ -1,0 +1,27 @@
+h1, .navbar {
+  font-family: "Helvetica Neue";
+  text-align: center;
+  margin: 50px auto;
+}
+
+.menu {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px;
+  display: inline-block;
+  color: #ccc;
+  text-decoration: none;
+}
+
+#photos {
+  width: 800px;
+  margin: 50px auto;
+}
+
+img {
+  display: inline-block;
+  margin-top: 40px;
+  width: 800px;
+  height: auto;
+  vertical-align: top;
+}
