@@ -38,16 +38,10 @@
       photoContainer2022.append(img);
     }, 1000);
   }
-  for (var i = 0; i < 3; i++) {
+  for (var i = 0; i < 10; i++) {
     const img = document.createElement("img");
-    img.setAttribute('src', `resizedPMC2023Spring/2023spring${i}.jpg`);
-    setTimeout(function() {
-      photoContainer2023.append(img);
-    }, 1000);
-  }
-  for (var i = 3; i < 10; i++) {
-    const img = document.createElement("img");
-    img.setAttribute('src', `resizedPMC2023Spring/2023spring${i}.png`);
+    const fileType = i > 2 ? 'png' : 'jpg';
+    img.setAttribute('src', `resizedPMC2023Spring/2023spring${i}.${fileType}`);
     setTimeout(function() {
       photoContainer2023.append(img);
     }, 1000);
